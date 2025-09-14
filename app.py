@@ -8,7 +8,7 @@ from PIL import Image
 
 # set configure to access gemini models
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-st.secrets["GOOGLE_API_KEY"]
+
 ## Function to get response 
 def get_response(input_prompt, image):
     model=genai.GenerativeModel(model_name="gemini-2.5-flash")
@@ -63,6 +63,4 @@ if submit:
     image_data= input_image_setup(uploaded_file)
     response= get_response(input_prompt, image_data)
     st.subheader("The Response is ")
-
     st.write(response)
-
