@@ -33,6 +33,7 @@ def input_image_setup(uploaded_file):
 ## Set the streamlit web app
 st.set_page_config(page_title="Nutriants Advisor App")
 st.header("Nutriants Advisor Application: Calculate the Calories of Foods:")
+st.secrets["GOOGLE_API_KEY"]
 uploaded_file= st.file_uploader("Choose an Image ...", type=["jpg","jpeg","png"])
 image=""
 if uploaded_file is not None:
@@ -64,3 +65,4 @@ if submit:
     st.subheader("The Response is ")
 
     st.write(response)
+
