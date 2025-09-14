@@ -1,0 +1,13 @@
+ipykernel
+python-dotenv
+streamlit
+google-generativeai
+langchain
+PyPDF2
+chromadb
+faiss-cpu
+langchain_google_genai
+langchain_community
+pdf2image
+youtube-transcript-api
+pathlib
